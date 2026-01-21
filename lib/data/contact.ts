@@ -52,14 +52,14 @@
  */
 export const contactSectionContent = {
   sectionTitle: "Get In Touch",
-  title: "Ready to Get Started?",
-  subtitle: "Get your free quote today. Our team is ready to help you achieve your goals with our professional services.",
+  title: "Ready for a Greener Lawn?",
+  subtitle: "Get your free lawn care quote today. Our team is ready to help you achieve the beautiful, healthy lawn you deserve.",
   contactInfo: {
     title: "Contact Information",
     mapPlaceholder: "Our Service Area"
   },
   form: {
-    title: "Get Your Free Quote",
+    title: "Get Your Free Lawn Care Quote",
     labels: {
       firstName: "First Name",
       lastName: "Last Name",
@@ -73,7 +73,7 @@ export const contactSectionContent = {
       lastName: "Doe",
       email: "john@example.com",
       phone: "(555) 123-4567",
-      message: "Tell us about your needs and how we can help...",
+      message: "Tell us about your lawn care needs, property size, and any specific concerns...",
     },
     maxLengths: {
       message: 1000, // Maximum characters for the message field
@@ -83,11 +83,11 @@ export const contactSectionContent = {
       submitting: "Sending...",
       submitted: "Message Sent!",
     },
-    disclaimer: "By submitting this form, you agree to our privacy policy. We'll respond within 24 hours.",
+    disclaimer: "By submitting this form, you agree to our privacy policy. We'll respond within 24 hours with your custom lawn care quote.",
     successMessage: "Message Sent!",
-    errorMessage: "Failed to send message. Please try again or call us directly.",
+    errorMessage: "Failed to send message. Please try again or call us directly at (555) LAWN-123.",
     quoteEmailTemplate: `
-      <h2>New Quote Request</h2>
+      <h2>New Lawn Care Quote Request</h2>
       <p>You have received a new quote request from your website.</p>
 
       <h3>Customer Information</h3>
@@ -105,7 +105,7 @@ export const contactSectionContent = {
 
       <hr />
       <p style="color: #666; font-size: 12px;">
-        This email was sent from your website contact form.
+        This email was sent from the GreenScape Lawn Care website contact form.
       </p>
     `,
   }

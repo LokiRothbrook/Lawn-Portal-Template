@@ -66,132 +66,132 @@ export interface Service {
  */
 export const services: Service[] = [
   {
-    id: "service-one",
-    title: "Service One",
-    shortDescription: "Your primary service offering",
-    description: "Describe your main service offering here. Explain what makes it valuable to your customers, the problems it solves, and why clients should choose your business for this service.",
-    iconName: "Briefcase",
+    id: "lawn-mowing",
+    title: "Lawn Mowing",
+    shortDescription: "Weekly and bi-weekly professional mowing",
+    description: "Keep your lawn looking pristine with our professional mowing services. We use commercial-grade equipment and follow best practices like alternating mowing patterns to promote healthy grass growth and prevent soil compaction.",
+    iconName: "Scissors",
     features: [
-      "Key feature or benefit",
-      "Another important feature",
-      "What sets you apart",
-      "Quality guarantee",
-      "Customer-focused approach"
+      "Weekly or bi-weekly scheduling",
+      "Commercial-grade equipment",
+      "Alternating mowing patterns",
+      "Edging along walkways & driveways",
+      "Grass clipping cleanup included"
     ],
     image: "/services/service-1.svg",
-    price: "From $XXX"
+    price: "From $35"
   },
   {
-    id: "service-two",
-    title: "Service Two",
-    shortDescription: "Your secondary service offering",
-    description: "Describe your second service offering here. Detail the specific benefits, the process involved, and how it complements your other services or stands on its own.",
-    iconName: "Users",
+    id: "lawn-fertilization",
+    title: "Lawn Fertilization",
+    shortDescription: "Custom fertilization programs",
+    description: "Give your lawn the nutrients it needs to thrive with our customized fertilization programs. We analyze your soil and grass type to create a tailored feeding schedule that promotes deep root growth and vibrant green color.",
+    iconName: "Leaf",
     features: [
-      "Primary benefit of this service",
-      "How it helps customers",
-      "Professional approach",
-      "Proven methodology",
-      "Satisfaction guaranteed"
+      "Soil analysis included",
+      "Custom nutrient blends",
+      "Seasonal application schedule",
+      "Slow-release formulas",
+      "Eco-friendly options available"
     ],
     image: "/services/service-2.svg",
-    price: "From $XXX"
+    price: "From $45"
   },
   {
-    id: "service-three",
-    title: "Service Three",
-    shortDescription: "Additional service description",
-    description: "Outline your third service here. Explain the unique value proposition, target audience, and specific outcomes customers can expect when choosing this service.",
-    iconName: "Lightbulb",
+    id: "weed-control",
+    title: "Weed Control",
+    shortDescription: "Pre & post-emergent weed treatment",
+    description: "Say goodbye to dandelions, crabgrass, and other invasive weeds. Our comprehensive weed control program includes both pre-emergent treatments to prevent weeds and post-emergent applications to eliminate existing problems.",
+    iconName: "Bug",
     features: [
-      "Innovative solutions",
-      "Expert implementation",
-      "Customized approach",
-      "Measurable results",
-      "Ongoing support"
+      "Pre-emergent prevention",
+      "Post-emergent treatment",
+      "Targeted spot treatments",
+      "Safe for pets & children",
+      "Broadleaf & grassy weed control"
     ],
     image: "/services/service-3.svg",
-    price: "From $XXX"
+    price: "From $50"
   },
   {
-    id: "service-four",
-    title: "Service Four",
-    shortDescription: "Specialized service offering",
-    description: "Detail your fourth service here. Focus on the specialized nature of this offering, the expertise required, and the exceptional results your clients can expect.",
-    iconName: "Target",
+    id: "aeration-seeding",
+    title: "Aeration & Overseeding",
+    shortDescription: "Core aeration and lawn renovation",
+    description: "Revitalize your lawn with our aeration and overseeding services. Core aeration relieves soil compaction and allows water, air, and nutrients to reach the roots, while overseeding fills in thin spots and introduces improved grass varieties.",
+    iconName: "Sprout",
     features: [
-      "Targeted solutions",
-      "Industry expertise",
-      "Best practices",
-      "Quality assurance",
-      "Timely delivery"
+      "Core aeration service",
+      "Premium grass seed blends",
+      "Improved water absorption",
+      "Reduced soil compaction",
+      "Thicker, healthier lawn"
     ],
     image: "/services/service-4.svg",
-    price: "From $XXX"
+    price: "From $150"
   },
   {
-    id: "service-five",
-    title: "Service Five",
-    shortDescription: "Premium service option",
-    description: "Describe your premium service offering. Highlight the elevated experience, additional benefits, and exclusive features that make this service stand out.",
-    iconName: "Award",
+    id: "hedge-trimming",
+    title: "Hedge & Shrub Trimming",
+    shortDescription: "Professional hedge shaping and maintenance",
+    description: "Keep your hedges, shrubs, and ornamental plants looking their best with our professional trimming services. We shape and maintain your plants to enhance curb appeal while promoting healthy growth.",
+    iconName: "TreeDeciduous",
     features: [
-      "Premium quality",
-      "Exclusive benefits",
-      "Priority service",
-      "Dedicated support",
-      "Enhanced features"
+      "Precise shaping & styling",
+      "Health-focused pruning",
+      "Debris removal included",
+      "All shrub types serviced",
+      "Seasonal maintenance plans"
     ],
     image: "/services/service-5.svg",
-    price: "From $XXX"
+    price: "From $75"
   },
   {
-    id: "service-six",
-    title: "Service Six",
-    shortDescription: "Growth-focused service",
-    description: "Explain your growth-oriented service. Show how this helps clients scale, improve, or achieve their business objectives through your expertise.",
-    iconName: "TrendingUp",
+    id: "leaf-removal",
+    title: "Leaf Removal",
+    shortDescription: "Fall cleanup and leaf management",
+    description: "Don't let fallen leaves smother your lawn. Our leaf removal service clears your property of leaves and debris, protecting your grass from disease and ensuring your lawn is ready for winter dormancy.",
+    iconName: "Wind",
     features: [
-      "Scalable solutions",
-      "Growth strategies",
-      "Performance optimization",
-      "Data-driven approach",
-      "Long-term partnership"
+      "Complete leaf clearing",
+      "Gutter cleaning available",
+      "Mulching or hauling options",
+      "Flower bed cleanup",
+      "Weekly fall service plans"
     ],
     image: "/services/service-6.svg",
-    price: "Custom Quote"
+    price: "From $85"
   },
   {
-    id: "service-seven",
-    title: "Service Seven",
-    shortDescription: "Security and compliance",
-    description: "Detail your security or compliance-focused service. Explain how you protect clients, ensure regulatory compliance, and maintain the highest standards.",
+    id: "pest-control",
+    title: "Lawn Pest Control",
+    shortDescription: "Grub and insect treatment",
+    description: "Protect your lawn from destructive pests like grubs, chinch bugs, and armyworms. Our targeted pest control treatments eliminate current infestations and create a barrier against future invasions.",
     iconName: "Shield",
     features: [
-      "Comprehensive protection",
-      "Compliance expertise",
-      "Risk management",
-      "Regular audits",
-      "Peace of mind"
+      "Grub prevention & treatment",
+      "Surface insect control",
+      "Pet & family safe products",
+      "Preventive applications",
+      "Satisfaction guaranteed"
     ],
     image: "/services/service-7.svg",
-    price: "From $XXX"
+    price: "From $60"
   },
   {
-    id: "service-eight",
-    title: "Service Eight",
-    shortDescription: "Fast and efficient solutions",
-    description: "Describe your efficiency-focused service. Highlight quick turnaround times, streamlined processes, and how you help clients save time and resources.",
-    iconName: "Zap",
+    id: "spring-cleanup",
+    title: "Spring & Fall Cleanup",
+    shortDescription: "Seasonal lawn preparation",
+    description: "Prepare your lawn for the growing season or winter with our comprehensive cleanup services. We remove debris, dethatch when needed, edge beds, and get your property looking fresh and ready.",
+    iconName: "Sun",
     features: [
-      "Quick turnaround",
-      "Streamlined process",
-      "Efficient execution",
-      "Cost-effective",
-      "Immediate results"
+      "Debris & branch removal",
+      "Bed edging & cleanup",
+      "Dethatching available",
+      "First mow of season",
+      "Complete property refresh"
     ],
     image: "/services/service-8.svg",
-    price: "From $XXX"
+    price: "From $125"
   }
 ];
 
@@ -209,8 +209,8 @@ export const services: Service[] = [
  */
 export const servicesSectionContent = {
   sectionTitle: "Our Services",
-  title: "Professional Solutions",
-  subtitle: "From individuals to businesses, we offer comprehensive services tailored to meet your unique needs and exceed your expectations.",
+  title: "Complete Lawn Care Solutions",
+  subtitle: "From routine mowing to specialized treatments, we offer comprehensive lawn care services to keep your property looking beautiful year-round.",
   button: {
     text: "View All Services",
     href: "/services"

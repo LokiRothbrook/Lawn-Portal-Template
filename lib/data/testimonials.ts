@@ -39,16 +39,16 @@
  */
 export const testimonialsSectionContent = {
   sectionTitle: "Testimonials",
-  title: "What our Clients Say",
-  subtitle: "Don't just take our word for it. Here's what homeowners and businesses have to say about our services.",
+  title: "What Our Customers Say",
+  subtitle: "Don't just take our word for it. Here's what homeowners and property managers have to say about our lawn care services.",
   trustIndicators: [
     {
       value: "500+",
-      label: "Happy Clients"
+      label: "Happy Customers"
     },
     {
       value: "4.9",
-      label: "Average Rating"
+      label: "Google Rating"
     },
     {
       value: "100%",
@@ -93,92 +93,92 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Client Name",
-    role: "Business Owner",
-    content: "Add a real testimonial from one of your satisfied customers here. Include specific details about the positive experience they had with your business.",
+    name: "Sarah Mitchell",
+    role: "Homeowner",
+    content: "GreenScape has been maintaining our lawn for 3 years now. They're always on time, professional, and our yard has never looked better. The neighbors constantly ask who does our lawn!",
     rating: 5,
     image: "/testimonials/client-1.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 2,
-    name: "Client Name",
-    role: "Manager",
-    content: "Include another customer testimonial that highlights different aspects of your service, such as professionalism, quality, or customer service.",
+    name: "James Rodriguez",
+    role: "Property Manager",
+    content: "We use GreenScape for all 12 of our rental properties. Their commercial team is efficient, reliable, and the pricing is very competitive. Highly recommend for property managers.",
     rating: 5,
     image: "/testimonials/client-2.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 3,
-    name: "Client Name",
-    role: "Director",
-    content: "Feature a testimonial that speaks to the results and outcomes your clients have experienced. Specific numbers or achievements work great here.",
+    name: "Emily Chen",
+    role: "Homeowner",
+    content: "After struggling with brown patches for years, GreenScape's fertilization program completely transformed our lawn. It's now the greenest on the block!",
     rating: 5,
     image: "/testimonials/client-3.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 4,
-    name: "Client Name",
-    role: "CEO",
-    content: "Add a testimonial from a business client that discusses the value you brought to their organization and how you exceeded their expectations.",
+    name: "Michael Thompson",
+    role: "Business Owner",
+    content: "First impressions matter for our dental practice. GreenScape keeps our grounds immaculate year-round. Our patients always comment on how nice the landscaping looks.",
     rating: 5,
     image: "/testimonials/client-4.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 5,
-    name: "Client Name",
-    role: "Customer",
-    content: "Include a testimonial that emphasizes ease of working with your team, communication quality, and overall customer experience.",
+    name: "Lisa Anderson",
+    role: "Homeowner",
+    content: "The fall cleanup crew was amazing! They cleared every leaf, cleaned the gutters, and even trimmed the hedges. My yard was ready for winter in just one visit.",
     rating: 5,
     image: "/testimonials/client-5.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 6,
-    name: "Client Name",
-    role: "Partner",
-    content: "Feature a testimonial from a long-term client or partner that speaks to reliability, consistency, and the value of your ongoing relationship.",
+    name: "David Wilson",
+    role: "HOA President",
+    content: "GreenScape has been our HOA's lawn care provider for 5 years. They maintain our common areas beautifully and are always responsive to our requests. Great communication!",
     rating: 5,
     image: "/testimonials/client-6.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 7,
-    name: "Client Name",
-    role: "Client",
-    content: "Add a testimonial highlighting your problem-solving abilities and how you went above and beyond to deliver exceptional results.",
+    name: "Jennifer Martinez",
+    role: "Homeowner",
+    content: "We had a serious grub problem that was destroying our lawn. GreenScape's pest control treatment saved our yard! The grass came back fuller than ever.",
     rating: 5,
     image: "/testimonials/client-7.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 8,
-    name: "Client Name",
-    role: "Executive",
-    content: "Include a testimonial that discusses value for money, return on investment, or how your services have positively impacted their business.",
+    name: "Robert Taylor",
+    role: "Retired",
+    content: "As a senior, I can no longer maintain my own lawn. GreenScape gives me peace of mind knowing my yard always looks great. Fair prices and friendly service.",
     rating: 5,
     image: "/testimonials/client-8.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 9,
-    name: "Client Name",
-    role: "Customer",
-    content: "Feature a testimonial that highlights your expertise, industry knowledge, and the professional advice you provided.",
+    name: "Amanda Foster",
+    role: "Homeowner",
+    content: "The aeration and overseeding service was worth every penny. Our thin, patchy lawn is now thick and lush. Should have done this years ago!",
     rating: 5,
     image: "/testimonials/client-9.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 10,
-    name: "Client Name",
-    role: "Business Owner",
-    content: "Add a testimonial that emphasizes why they would recommend your services to others and why they continue to choose your business.",
+    name: "Kevin O'Brien",
+    role: "Restaurant Owner",
+    content: "Our outdoor patio area needs to look perfect for customers. GreenScape's weekly maintenance keeps everything pristine. They're a key part of our business success.",
     rating: 5,
     image: "/testimonials/client-10.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   }
 ];

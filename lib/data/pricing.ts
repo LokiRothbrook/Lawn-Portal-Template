@@ -65,51 +65,51 @@ export interface PricingPlan {
 export const pricingPlans: PricingPlan[] = [
   {
     id: "basic",
-    name: "Starter",
-    description: "Perfect for getting started",
-    price: "$XX",
+    name: "Essential",
+    description: "Basic lawn maintenance for smaller yards",
+    price: "$99",
     period: "per month",
     features: [
-      "Core feature included",
-      "Basic support",
-      "Standard delivery",
-      "Email communication",
-      "Monthly reporting"
+      "Weekly mowing (up to 5,000 sq ft)",
+      "Edging & trimming",
+      "Grass clipping cleanup",
+      "Seasonal schedule adjustments",
+      "Email support"
     ],
     highlighted: false
   },
   {
     id: "professional",
-    name: "Professional",
-    description: "Most popular choice for growing businesses",
-    price: "$XXX",
+    name: "Premium",
+    description: "Complete care for a healthy, beautiful lawn",
+    price: "$179",
     period: "per month",
     features: [
-      "Everything in Starter",
-      "Priority support",
-      "Advanced features",
+      "Weekly mowing (up to 10,000 sq ft)",
+      "Edging, trimming & blowing",
+      "Fertilization (6 applications/year)",
+      "Weed control treatments",
+      "Priority scheduling",
       "Phone & email support",
-      "Weekly reporting",
-      "Dedicated account manager",
-      "Custom solutions"
+      "10% off additional services"
     ],
     highlighted: true,
     badge: "Most Popular"
   },
   {
     id: "enterprise",
-    name: "Enterprise",
-    description: "Complete solution for large organizations",
+    name: "Estate",
+    description: "Full-service care for larger properties",
     price: "Custom",
     period: "contact us",
     features: [
-      "Everything in Professional",
-      "24/7 premium support",
-      "Unlimited features",
-      "Custom integrations",
-      "Real-time reporting",
-      "Strategic consulting",
-      "SLA guarantee"
+      "Weekly mowing (10,000+ sq ft)",
+      "Complete fertilization program",
+      "Weed & pest control",
+      "Aeration & overseeding",
+      "Seasonal cleanups included",
+      "Dedicated account manager",
+      "Priority emergency service"
     ],
     highlighted: false
   }
@@ -130,9 +130,9 @@ export const pricingPlans: PricingPlan[] = [
  * - `heroSubtitle`: The subtitle displayed in the hero section of the pricing page.
  */
 export const pricingPageContent = {
-  title: "Pricing",
-  description: "Explore our simple and transparent pricing plans. We offer a range of packages to suit your needs and budget, from starter options to enterprise solutions.",
-  heroSubtitle: "Choose a package that works for you. All plans include our satisfaction guarantee and professional service.",
+  title: "Lawn Care Pricing",
+  description: "Explore our simple and transparent lawn care pricing plans. We offer packages for every lawn size and budget, from basic mowing to complete lawn care programs.",
+  heroSubtitle: "Choose a lawn care package that fits your needs. All plans include our satisfaction guarantee and professional service.",
 };
 
 /**
@@ -146,5 +146,5 @@ export const pricingPageContent = {
  */
 export const individualServicesPricingContent = {
   title: "Individual Service Pricing",
-  subtitle: "Need just one service? Here's our pricing for individual services. Custom quotes available for larger properties.",
+  subtitle: "Need just one service? Here's our pricing for individual lawn care services. Custom quotes available for larger properties.",
 };

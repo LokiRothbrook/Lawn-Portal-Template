@@ -29,12 +29,12 @@ import { Users, Trophy, Sparkles, ThumbsUp } from "lucide-react";
 export const aboutSectionContent = {
   sectionTitle: "About Us",
   title: {
-    line1: "Your Trusted",
-    line2: "Business Partner"
+    line1: "Your Local",
+    line2: "Lawn Care Experts"
   },
   paragraphs: [
-    "Since 2015, we've been helping clients achieve their goals with exceptional service. What started as a small operation has grown into one of the region's most trusted service providers.",
-    "Our team of trained professionals uses industry-leading methods and best practices to deliver results that exceed expectations. We treat every client like family, because your satisfaction is our success."
+    "Since 2015, GreenScape Lawn Care has been transforming yards across Springfield and the surrounding communities. What started as a one-man mowing operation has grown into a full-service lawn care company trusted by hundreds of homeowners and businesses.",
+    "Our team of certified lawn care professionals uses commercial-grade equipment and proven techniques to deliver results that make your neighbors jealous. We treat every lawn like it's our own, because your satisfaction is what keeps us growing."
   ],
   image: {
     /** Path to the about section image. Set to null to use the animated visual instead. */
@@ -44,34 +44,34 @@ export const aboutSectionContent = {
     /** First line of text below the year (e.g., "Years of Excellence") */
     line1: "Years of Excellence",
     /** Second line of text (e.g., "Serving Clients Since 2015") */
-    line2: "Serving Clients Since 2015",
+    line2: "Serving Lawns Since 2015",
   },
   statsCard: {
     value: "99%",
     label: "Satisfaction"
   },
   stats: [
-    { icon: Users, value: "500+", label: "Happy Clients" },
+    { icon: Users, value: "500+", label: "Happy Customers" },
     { icon: Trophy, value: "10+", label: "Years Experience" },
-    { icon: Sparkles, value: "5K+", label: "Projects Completed" },
+    { icon: Sparkles, value: "15K+", label: "Lawns Serviced" },
     { icon: ThumbsUp, value: "99%", label: "Satisfaction Rate" },
   ],
   values: [
     {
-      title: "Quality First",
-      description: "We use the best tools and methods to deliver outstanding results every time.",
-    },
-    {
-      title: "Customer Focus",
-      description: "Your needs are our priority. We tailor our approach to exceed expectations.",
+      title: "Lawn Expertise",
+      description: "Our certified technicians understand grass types, soil conditions, and regional climate to give your lawn exactly what it needs.",
     },
     {
       title: "Reliable Service",
-      description: "We show up on time, every time. Your schedule is our priority.",
+      description: "Rain or shine, we show up on schedule. You can count on us to keep your lawn looking great week after week.",
+    },
+    {
+      title: "Eco-Friendly",
+      description: "We use environmentally responsible products and practices that are safe for your family, pets, and the planet.",
     },
     {
       title: "Fair Pricing",
-      description: "Transparent quotes with no hidden fees. You know exactly what you're paying for.",
+      description: "Transparent quotes with no hidden fees. We'll never surprise you with unexpected charges.",
     },
   ]
 };
