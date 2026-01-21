@@ -43,6 +43,13 @@ import {
   TrendingUp,
   Shield,
   Zap,
+  Scissors,
+  Leaf,
+  Bug,
+  Sprout,
+  TreeDeciduous,
+  Wind,
+  Sun,
 
   // ========================================
   // COMMON ICONS - Uncomment as needed
@@ -123,7 +130,6 @@ import {
   // Upload,
   // Share,
   // Link,
-  // Scissors,
   // Pencil,
   // Trash,
 
@@ -135,12 +141,10 @@ import {
   // EyeOff,
 
   // -- Weather --
-  // Sun,
   // Moon,
   // Cloud,
   // CloudRain,
   // Droplet,
-  // Wind,
 
   // -- Tech & Devices --
   // Monitor,
@@ -192,8 +196,6 @@ import {
   // Gift,
   // Sparkles,
   // Flame,
-  // Leaf,
-  // TreeDeciduous,
   // Coffee,
   // Utensils,
   // Car,
@@ -219,6 +221,13 @@ const iconMap: Record<string, LucideIcon> = {
   TrendingUp,
   Shield,
   Zap,
+  Scissors,
+  Leaf,
+  Bug,
+  Sprout,
+  TreeDeciduous,
+  Wind,
+  Sun,
 
   // ========================================
   // COMMON ICONS - Uncomment as needed
@@ -300,7 +309,6 @@ const iconMap: Record<string, LucideIcon> = {
   // Upload,
   // Share,
   // Link,
-  // Scissors,
   // Pencil,
   // Trash,
 
@@ -312,12 +320,10 @@ const iconMap: Record<string, LucideIcon> = {
   // EyeOff,
 
   // -- Weather --
-  // Sun,
   // Moon,
   // Cloud,
   // CloudRain,
   // Droplet,
-  // Wind,
 
   // -- Tech & Devices --
   // Monitor,
@@ -369,8 +375,6 @@ const iconMap: Record<string, LucideIcon> = {
   // Gift,
   // Sparkles,
   // Flame,
-  // Leaf,
-  // TreeDeciduous,
   // Coffee,
   // Utensils,
   // Car,

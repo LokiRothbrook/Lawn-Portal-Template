@@ -3,67 +3,105 @@
 import * as React from "react"
 import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Leaf } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { heroSectionContent } from "@/lib/data"
 
-function LaserWaveBackground() {
+interface ParticleStyle {
+  left?: string;
+  top: string;
+  animationDelay: string;
+  animationDuration: string;
+  transform?: string;
+  opacity?: number;
+}
+
+interface Particle {
+  type: 'leaf' | 'grass' | 'wind' | 'cloud';
+  style: ParticleStyle;
+  className?: string;
+}
+
+function WindyDayBackground() {
+  const [particles, setParticles] = React.useState<Particle[]>([]);
+
+  React.useEffect(() => {
+    const items: Particle[] = [];
+    const leafClasses = ['blowing-leaf-1', 'blowing-leaf-2', 'blowing-leaf-3'];
+    // Leaves
+    for (let i = 0; i < 30; i++) {
+      items.push({
+        type: 'leaf',
+        className: leafClasses[Math.floor(Math.random() * leafClasses.length)],
+        style: {
+          left: `${Math.random() * -15 - 5}%`,
+          top: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 20}s`,
+          animationDuration: `${Math.random() * 10 + 10}s`, // More speed variation
+          transform: `scale(${Math.random() * 0.5 + 0.5}) rotate(${Math.random() * 6 - 3}deg)`, // Scale and slight angle
+          opacity: Math.random() * 0.5 + 0.25, // Transparency between 25% and 75%
+        }
+      });
+    }
+    // Grass clippings
+    for (let i = 0; i < 20; i++) {
+      items.push({
+        type: 'grass',
+        style: {
+          left: `${Math.random() * -15 - 5}%`,
+          top: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 20}s`,
+          animationDuration: `${Math.random() * 10 + 8}s`, // More speed variation
+        }
+      });
+    }
+    // Wind lines
+    for (let i = 0; i < 10; i++) {
+      items.push({
+        type: 'wind',
+        style: {
+          left: `${Math.random() * -15 - 5}%`,
+          top: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 20}s`,
+          animationDuration: `${Math.random() * 5 + 7}s`, // More speed variation
+        }
+      });
+    }
+    // Wind Clouds
+    for (let i = 0; i < 5; i++) {
+      items.push({
+          type: 'cloud',
+          style: {
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * -20 - 10}%`, // Start further off-screen
+              transform: `scale(${Math.random() * 0.6 + 0.7})`, // Varied sizes
+              animationDelay: `${Math.random() * 20}s`,
+              animationDuration: `${Math.random() * 15 + 15}s`, // Slower, more majestic movement
+          }
+      });
+    }
+    setParticles(items);
+  }, []);
+
   return (
-    // Container for the background elements, ensuring overflow is hidden and elements don't interfere with interactions.
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Animated Laser Wave Lines */}
-      {/* These divs create a visual effect of flowing lines, each with a different width and vertical position. */}
-      {/* The 'laser-wave' class likely defines their animation and styling. */}
-      <div className="laser-wave w-[200%] top-[15%]" />
-      <div className="laser-wave laser-wave-2 w-[180%] top-[35%]" />
-      <div className="laser-wave laser-wave-3 w-[220%] top-[55%]" />
-      <div className="laser-wave laser-wave-4 w-[190%] top-[75%]" />
-      <div className="laser-wave w-[210%] top-[90%]" style={{ animationDelay: '3s' }} />
-
-      {/* Glowing Orbs for depth */}
-      {/* These motion.divs create large, blurred glowing circles that animate to provide a sense of depth and movement. */}
-      <motion.div
-        className="wave-glow w-[400px] h-[400px] top-[10%] left-[-5%]"
-        // Animates scale and x-position for a subtle breathing and horizontal movement effect.
-        animate={{
-          scale: [1, 1.2, 1],
-          x: [0, 30, 0],
-        }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="wave-glow w-[500px] h-[500px] bottom-[5%] right-[-10%]"
-        // Animates scale and x-position with a slightly different pattern for variety.
-        animate={{
-          scale: [1.2, 1, 1.2],
-          x: [0, -40, 0],
-        }}
-        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="wave-glow w-[300px] h-[300px] top-[50%] left-[40%]"
-        // Animates scale and opacity for a pulsating glow effect in the center.
-        animate={{
-          scale: [1, 1.3, 1],
-          opacity: [0.3, 0.5, 0.3],
-        }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-      />
-
-      {/* Subtle grid overlay */}
-      {/* An SVG-based grid pattern that provides a technical or futuristic aesthetic to the background. */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <defs>
-            <pattern id="hero-grid" width="4" height="4" patternUnits="userSpaceOnUse">
-              <path d="M 4 0 L 0 0 0 4" fill="none" stroke="currentColor" strokeWidth="0.1" className="text-primary" />
-            </pattern>
-          </defs>
-          <rect width="100" height="100" fill="url(#hero-grid)" />
-        </svg>
-      </div>
+      {particles.map((p, i) => {
+        if (p.type === 'leaf') {
+          return <div key={i} className={p.className} style={p.style as React.CSSProperties} />;
+        }
+        if (p.type === 'grass') {
+          return <div key={i} className="blowing-grass" style={p.style as React.CSSProperties} />;
+        }
+        if (p.type === 'wind') {
+          return <div key={i} className="wind-line" style={p.style as React.CSSProperties} />;
+        }
+        if (p.type === 'cloud') {
+          return <div key={i} className="wind-cloud" style={p.style as React.CSSProperties} />;
+        }
+        return null;
+      })}
     </div>
-  )
+  );
 }
 
 export function HeroSection() {
@@ -88,10 +126,10 @@ export function HeroSection() {
     // Main section for the hero component, covering the full viewport height.
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background water-pattern"
     >
       {/* Renders the animated background elements. */}
-      <LaserWaveBackground />
+      <WindyDayBackground />
 
       {/* Main content wrapper, applies parallax 'y' and fade 'opacity' animations. */}
       <motion.div style={{ y, opacity }} className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">

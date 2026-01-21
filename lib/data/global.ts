@@ -48,17 +48,17 @@ import { Shield, Award, Clock, Sparkles } from "lucide-react"; // Only for hero 
  * - Replace all placeholder strings with your actual business information.
  */
 export const companyInfo = {
-  name: "Your Business Name",
-  tagline: "Your Business Tagline Goes Here",
-  phone: "(555) 123-4567",
-  email: "contact@yourbusiness.com",
-  address: "123 Business Street, City, State 12345",
-  hours: "Mon-Fri: 9AM-5PM | Sat: 10AM-2PM",
+  name: "GreenScape Lawn Care",
+  tagline: "Your Lawn, Our Passion",
+  phone: "(555) LAWN-123",
+  email: "info@greenscapelawncare.com",
+  address: "456 Garden Way, Springfield, IL 62701",
+  hours: "Mon-Sat: 7AM-7PM | Sun: 9AM-5PM",
   social: {
-    facebook: "https://facebook.com/yourbusiness",
-    instagram: "https://instagram.com/yourbusiness",
-    x: "https://x.com/yourbusiness",
-    youtube: "https://youtube.com/@yourbusiness"
+    facebook: "https://facebook.com/greenscapelawncare",
+    instagram: "https://instagram.com/greenscapelawncare",
+    x: "https://x.com/greenscapelawn",
+    youtube: "https://youtube.com/@greenscapelawncare"
   }
 };
 
@@ -174,7 +174,7 @@ export const headerContent = {
  *   very bottom bar of the footer (e.g., Privacy Policy, Terms of Service).
  */
 export const footerContent = {
-  taglineSuffix: "Your trusted partner for professional services in your area.",
+  taglineSuffix: "Your trusted partner for beautiful, healthy lawns in the greater Springfield area.",
   columns: {
     services: {
       title: "Our Services",
@@ -220,8 +220,8 @@ export const footerContent = {
  * - Modify the `primaryButton` and `secondaryButton` texts and their respective `href` (links).
  */
 export const callToActionSectionContent = {
-  title: "Ready to Get Started?",
-  subtitle: "Let us help you achieve your goals. Contact us today for a free consultation.",
+  title: "Ready for a Greener Lawn?",
+  subtitle: "Let us transform your outdoor space. Contact us today for a free lawn assessment and quote.",
   primaryButton: {
     text: "Get Free Quote",
     href: "/#contact"
@@ -253,16 +253,16 @@ export const callToActionSectionContent = {
 export const heroSectionContent = {
   title: {
     line1: "Professional",
-    line2: "Services"
+    line2: "Lawn Care"
   },
-  subtitle: "Experience excellence with our premier professional services. From individuals to businesses, we deliver outstanding results every time.",
+  subtitle: "Transform your outdoor space with our expert lawn care services. From weekly mowing to complete landscape maintenance, we keep your lawn looking its best all season long.",
   buttons: {
     primary: {
       text: "Get Free Estimate",
       href: "/#contact"
     },
     secondary: {
-      text: "Explore Services",
+      text: "Our Services",
       href: "/services"
     }
   },
@@ -273,7 +273,7 @@ export const heroSectionContent = {
     },
     {
       icon: Award,
-      text: "Licensed Pros"
+      text: "Licensed & Certified"
     },
     {
       icon: Clock,
@@ -283,32 +283,32 @@ export const heroSectionContent = {
   heroCards: [
     {
       id: 1,
-      title: "Quality Service",
-      subtitle: "For Individuals",
-      description: "Experience exceptional service tailored to your needs. We deliver professional results that exceed expectations.",
+      title: "Residential Care",
+      subtitle: "For Homeowners",
+      description: "Keep your lawn the envy of the neighborhood with our comprehensive residential lawn care packages tailored to your yard's unique needs.",
       cardClass: "hero-card-1",
       icon: Sparkles,
-      stats: "500+ Happy Clients",
+      stats: "500+ Happy Homeowners",
       delay: 0,
     },
     {
       id: 2,
-      title: "Business Solutions",
-      subtitle: "For Companies",
-      description: "Partner with professionals who understand your business needs. Custom solutions that drive real results.",
+      title: "Commercial Services",
+      subtitle: "For Businesses",
+      description: "Make a great first impression with professionally maintained grounds. We serve offices, HOAs, retail centers, and more.",
       cardClass: "hero-card-2",
       icon: Award,
-      stats: "100+ Businesses Served",
+      stats: "100+ Properties Maintained",
       delay: 0.1,
     },
     {
       id: 3,
-      title: "Reliable Support",
-      subtitle: "Always Available",
-      description: "Count on us for consistent, reliable service. We're here when you need us, delivering excellence every time.",
+      title: "Seasonal Programs",
+      subtitle: "Year-Round Care",
+      description: "From spring cleanup to fall leaf removal and winter prep, we keep your lawn healthy through every season.",
       cardClass: "hero-card-3",
       icon: Clock,
-      stats: "24/7 Support",
+      stats: "12-Month Programs",
       delay: 0.2,
     },
   ]

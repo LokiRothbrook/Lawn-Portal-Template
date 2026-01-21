@@ -46,54 +46,54 @@ export interface FAQItem {
  */
 export const faqData: FAQItem[] = [
   {
-    question: "What is the primary service you offer?",
+    question: "How often should I have my lawn mowed?",
     answer:
-      "Our primary service is [Your Primary Service], where we specialize in [briefly describe what you do]. We focus on delivering high-quality results tailored to our clients' needs.",
+      "During the growing season (spring through fall), we recommend weekly mowing for most lawns. During peak growth periods, twice-weekly mowing may be beneficial. We'll help you determine the best schedule based on your grass type and conditions.",
   },
   {
-    question: "How do I get a quote for my project?",
+    question: "How do I get a quote for lawn care services?",
     answer:
-      "Getting a quote is easy! Simply navigate to our contact section and fill out the form, or give us a call at [Your Phone Number]. We'll get back to you with a detailed, no-obligation estimate.",
+      "Getting a quote is easy! Simply fill out our contact form or call us at (555) LAWN-123. We'll schedule a free on-site assessment to measure your property and discuss your needs. You'll receive a detailed, no-obligation estimate within 24 hours.",
   },
   {
     question: "What areas do you serve?",
     answer:
-      "We primarily serve the [Your City/Region] area. If you're located outside this region, please contact us to see if we can accommodate your project.",
+      "We serve Springfield and the surrounding communities within a 25-mile radius, including Chatham, Rochester, Sherman, and Williamsville. Contact us to confirm service availability in your area.",
   },
   {
-    question: "What makes your business different from competitors?",
+    question: "What makes GreenScape different from other lawn care companies?",
     answer:
-    "We pride ourselves on our commitment to quality, customer satisfaction, and attention to detail. Our team is highly experienced, and we use the latest techniques and equipment to ensure the best possible outcome for your project.",
+      "We combine professional-grade equipment with certified lawn care expertise. Our team receives ongoing training in the latest techniques, and we use eco-friendly products whenever possible. Plus, we guarantee our work - if you're not satisfied, we'll make it right.",
   },
   {
-    question: "How long does a typical project take?",
+    question: "When is the best time to aerate and overseed my lawn?",
     answer:
-      "Project timelines can vary depending on the scope and complexity. Once we provide a quote, we will also give you an estimated timeline for completion.",
+      "For cool-season grasses common in Illinois, early fall (late August through September) is ideal for aeration and overseeding. The soil is still warm for seed germination, but cooler air temperatures reduce stress on new grass. Spring is a secondary option.",
   },
   {
     question: "Are you licensed and insured?",
     answer:
-      "Yes, we are fully licensed and insured. We believe in providing a professional and secure service for all our clients, giving you peace of mind.",
+      "Yes, GreenScape Lawn Care is fully licensed and insured. We carry general liability insurance and workers' compensation coverage, giving you complete peace of mind.",
   },
   {
     question: "Do you offer free estimates?",
-    answer: "Yes! We provide free, no-obligation estimates for all our services. Contact us to schedule your consultation."
+    answer: "Absolutely! We provide free, no-obligation estimates for all our lawn care services. We'll visit your property, assess your lawn's needs, and provide a detailed quote."
   },
   {
     question: "What payment methods do you accept?",
-    answer: "We accept all major credit cards, checks, and offer convenient payment plans for larger projects."
+    answer: "We accept all major credit cards, checks, and ACH bank transfers. For recurring services, we offer convenient auto-pay options. Seasonal prepay discounts are also available."
   },
   {
-    question: "How long does a typical project take?",
-    answer: "Project timelines vary based on scope. We'll provide a clear timeline during your consultation."
+    question: "Are your products safe for pets and children?",
+    answer: "Yes! We use EPA-registered products that are safe for families and pets when applied according to label directions. We recommend keeping pets and children off treated areas until the product dries, typically 1-2 hours."
   },
   {
-    question: "Do you work with businesses?",
-    answer: "Absolutely! We offer comprehensive services for businesses of all sizes. Contact us for a custom quote."
+    question: "Do you offer commercial lawn care services?",
+    answer: "Yes, we provide comprehensive commercial lawn care for offices, retail centers, HOAs, apartment complexes, and more. Contact us for a custom commercial quote tailored to your property's needs."
   },
   {
-    question: "What areas do you serve?",
-    answer: "We serve a wide area. Contact us to confirm service availability in your location."
+    question: "What happens if it rains on my scheduled service day?",
+    answer: "Light rain typically doesn't affect mowing services. For heavy rain or storms, we'll reschedule your service to the next available day at no extra charge. Fertilizer and treatment applications may be rescheduled to ensure product effectiveness."
   },
 ];
 
@@ -112,5 +112,5 @@ export const faqData: FAQItem[] = [
  */
 export const faqPageContent = {
   title: "Frequently Asked Questions",
-  description: "Have questions? We have answers. Find answers to common questions about our services, pricing, process, and more.",
+  description: "Have questions about lawn care? We have answers. Find answers to common questions about our lawn care services, pricing, scheduling, and more.",
 };
